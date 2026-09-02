@@ -17,8 +17,7 @@ on:
         required: false
         type: string
   schedule:
-    # 默认每天北京时间 09:20 执行。修改时间时只改 cron 即可。
-    - cron: "0 3 * * *"
+    - cron: "*/15 * * * *"   # 每 15 分钟一次，仅用于测试
 permissions:
   contents: read
 
