@@ -18,7 +18,8 @@ on:
         type: string
   schedule:
     # 默认每天北京时间 09:20 执行。修改时间时只改 cron 即可。
-    - cron: "20 0 * * *"
+    - cron: "0 10 * * *"
+      timezone: "Asia/ShangShai"
 permissions:
   contents: read
 
